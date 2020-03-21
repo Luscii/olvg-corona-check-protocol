@@ -243,17 +243,12 @@ This dataset contains the following fields (see measurements for additional deta
 
 ### Dataset 2: the daily surveys
 
-- `id`: The participant id (same as used in dataset 1), can occur multiple times due to the repeated measures.
-- `day`: Day the data was collected since start of measurements; March 14, 2020 equals 1.
-- `temperature`
-- `throat`
-- `nasal`
-- `breath`
-- `cough`
-- `call`
+- `id`: A unique measurement id.
+- `participantId`: The participant id (same as used in dataset 1), can occur multiple times due to the repeated measures.
+- `timestamp`: Timestamp of measurement in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601#Combined_date_and_time_representations) format.
+- `measurement`: One of daily measurements (`temperature`, `throat`, `nasal`, `breath`, `cough`, `call`)
+- `value`: Measurement value in Double format.
 - `group`: The participant group (1-7) the participant is allocated to at this moment in time.
-
-> **Note:** In this dataset each `id-day` combination provides a unique key for each row.
 
 ## Current results
 > **Note:** These numbers were last updated updated 20-03-2020, 14.08h, CET.
