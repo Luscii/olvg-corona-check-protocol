@@ -132,7 +132,7 @@ After filling out these questions participants are asked to read and comply to t
 > **Note:** The names in `code`-font indicate variable-names in the resulting dataset. See also the section Available Data below.
 
 ### Daily repeated measurements
-Participants can effectively choose to fill out each of the following measures independently. Although participants are encouraged visually to supply all of the measures every day, participants can choose to skip specific measurements anytime or even choose to provide multiple instances of the same measure within a single day.
+Participants can effectively choose to fill out each of the following measures independently. Although participants are encouraged visually to supply all of the measures every day (see [figure 6](#Visual-overview-of-the-tele-monitoring-system)), participants can choose to skip specific measurements anytime or even choose to provide multiple instances of the same measure within a single day.
 
 - `temperature`: "Please measure and fill out your temperature:"
 - `throat`: "Do you have a sore throat?" with answer categories:
@@ -272,6 +272,16 @@ While this document does not aim to provide any analysis of the collected data, 
 	7. "Cured:" **0**
 8. Total number of daily surveys: **346.231** (each symptom is considered a separate survey in the dataset)
 
+
+## Visual overview of the tele monitoring system
+
+![Figure 2: Introduction survey 1.](intro-survey-1.png)  |  ![Figure 3: Introduction survey 2.](intro-survey-2.png) | ![Figure 4: Introduction survey 3.](intro-survey-3.png)
+:-------------------------------:|:---------------------------------:|:-------------------------:
+Figure 2:Introduction survey 1.   |  Figure 3:Introduction survey 2   |  Figure 4:Introduction survey 3
+
+![Figure 5: Healthcare progression admin.](healthcare-panel.png)  |  ![Figure 6: Participant app.](participant-app.png) 
+:-------------------------------:|:---------------------------------:
+Figure 5:Healthcare progression admin   |  Figure 6:Participant app
 
 ## Discussion
 With this document we have tried to present a full overview of our data collection process in the LSRTLT-COV study such that researchers can make informed and meaningful requests for data and can validly judge any analysis based on the collected data. Here we mention a few methodological points that should be considered by anyone analyzing this data:
