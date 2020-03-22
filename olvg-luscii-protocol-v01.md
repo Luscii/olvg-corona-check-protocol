@@ -1,6 +1,6 @@
 # Large scale, real-time and longitudinal tele-monitoring of COVID-19 in the general population.
 
-> 20-03-2020: dr. Herre Reesing, dr. Joris H. Janssen, dr. Paul Bresser, dr. Daan Dohmen, Prof. dr. Maurits Kaptein, Prof. dr. Maurice van den Bosch.  
+> 20-03-2020: dr. Herre Reesing, dr. Joris H. Janssen, dr. Paul Bresser, dr. Daan Dohmen, Prof. dr. Maurits Kaptein, Prof. dr. Maurice van den Bosch, Omid Golzarian.  
 
 
 **Abstract:** *In this document we describe the initial setup of the large-scale, real-time, longitudinal tele-monitoring of COVID-19 symptoms study (LSRTLT-COV) as setup in the Netherlands. Although the tele-monitoring effort is primarily conceived to alleviate the burden COVID-19 imposes on the healthcare system by allowing healthcare professionals to remotely triage, monitor and comfort potential COVID-19 cases (see [https://luscii.com/nl/corona-virus/](https://luscii.com/nl/corona-virus/)), we believe the collected data is valuable: with this document we aim detail our data collection efforts such that the resulting data can meaningfully be used by the scientific community.*
@@ -47,6 +47,7 @@ Potential participants start enrollment by signing up at the webpage [https://ww
 3. Via broadcast in the national Dutch news (March 18, 2020).
 
 Additionally, awareness might be raised through word-of-mouth, and prospective participants might be referred to the webpage by various healthcare professionals (.e.g., general practitioners or home care agencies).
+
 > **Note:** It is important to note that after awareness is created, participants voluntarily sign up. Hence, there is a clear (self-) selection bias. We are not fully in control of the word-of-mouth nor the mentions of the LSRTLT-COV tele-monitoring application in the various media and hence we only have limited control over this part of the sampling process.
 
 ### Inclusion criteria
@@ -83,7 +84,7 @@ Group membership is not communicated to participants but is used in later intera
 Finally, three more participant groups exist: 6. *"COVID-19 (suspected) positive"* participants, 7. *"Referred to ER"* participants and 8. *"Cured"* participants. Allocation to these groups happens during interaction; for details see the "Additional group membership" section below.
 
 ## Measurements
-Effectively two different surveys are administered to participants: the introduction survey and the daily experience sampling survey. The latter is, in the exact same form, administered daily. Here we list the measures included in each.
+Effectively two different surveys are administered to participants: the introduction survey and the daily experience sampling survey. Here we list the measures included in each.
 
 ### Measurements in introduction survey
 The introduction survey consists of the following questions:
@@ -132,7 +133,7 @@ After filling out these questions participants are asked to read and comply to t
 > **Note:** The names in `code`-font indicate variable-names in the resulting dataset. See also the section Available Data below.
 
 ### Daily repeated measurements
-Participants can effectively choose to fill out each of the following measures independently. Although participants are encouraged visually to supply all of the measures every day, participants can choose to skip specific measurements anytime or even choose to provide multiple instances of the same measure within a single day.
+Although participants are prompted daily to fill in the experience sampling survey, participants can effectively choose to fill out each of the following measures independently. Also, participants can choose to skip specific measurements anytime or even choose to provide multiple instances of the same measure within a single day. The following measurements are available:
 
 - `temperature`: "Please measure and fill out your temperature:"
 - `throat`: "Do you have a sore throat?" with answer categories:
@@ -154,6 +155,8 @@ Participants can effectively choose to fill out each of the following measures i
 - `call`: "Would you like to receive a phone-call? with answer categories:
 	- "Yes"
 	- "No"
+
+[Figure 6](#Visual-overview-of-the-tele-monitoring-system) provides a screenshot of the application.
 
 > **Note:** All questions and answer categories have been translated from Dutch; we have tried to maintain their semantics a much as possible.
 
@@ -219,7 +222,7 @@ Next to the 5 participant groups detailed above, two more groups exist in the LS
 
 * 6. *"COVID-19 (suspected) positive"* participants: Participants are allocated to this group if the either score high on `cough > 2` and have a fever OR score high on `breath > 5` and have a fever where fever is dependent on prior group membership (see above).
 * 7. *"Referred to ER"* participants: Participants are allocated to this group after a phone call in which the healthcare provider has requested a participant to visit the ER and get tested for COVID-19. 
-* 7. *"Cured"* participants: Participants are allocated to this group if, after being in the "COVID positive" group they are relieved of any symptoms for more than a day.
+* 8. *"Cured"* participants: Participants are allocated to this group if, after being in the "COVID positive" group they are relieved of any symptoms for more than a day.
 
 Finally, the alert rules for "COVID-19 (suspected) positive" participants are as follows:
 
@@ -273,6 +276,16 @@ While this document does not aim to provide any analysis of the collected data, 
 8. Total number of daily surveys: **346.231** (each symptom is considered a separate survey in the dataset)
 
 
+## Visual overview of the tele monitoring system
+
+![Figure 2: Introduction survey 1.](intro-survey-1.png)  |  ![Figure 3: Introduction survey 2.](intro-survey-2.png) | ![Figure 4: Introduction survey 3.](intro-survey-3.png)
+:-------------------------------:|:---------------------------------:|:-------------------------:
+Figure 2:Introduction survey 1.   |  Figure 3:Introduction survey 2   |  Figure 4:Introduction survey 3
+
+![Figure 5: Healthcare progression admin.](healthcare-panel.png)  |  ![Figure 6: Participant app.](participant-app.png) 
+:-------------------------------:|:---------------------------------:
+Figure 5:Healthcare progression admin   |  Figure 6:Participant app
+
 ## Discussion
 With this document we have tried to present a full overview of our data collection process in the LSRTLT-COV study such that researchers can make informed and meaningful requests for data and can validly judge any analysis based on the collected data. Here we mention a few methodological points that should be considered by anyone analyzing this data:
 
@@ -303,8 +316,8 @@ We are trying to handle data requests **daily**, but given the current situation
 - Prof. dr. Maurice van den Bosch
 - Prof. dr. Maurits Kaptein
 
-> **Note:** We expect anyone who uses our collected data to acknowledge the source; please do so by referencing... [INSERT]()
-
+> **Note:** We expect anyone who uses our collected data to acknowledge the source; please do reference this page anytime you make use of the collected data.
+ 
 ## Conclusion
 We would like to close this document by reiterating that the primarily goal of the tele-monitoring system used in the LSRTLT-COV study is to relieve the burden imposed on the healthcare system by making triage and monitoring more efficient. Therefore, along the way, not all the choices that we make are solely driven by scientific methodological rigor. Sometimes practical demands steer our decision making. We however sincerely believe that despite this, the resulting data are valuable: at the very least the data provide an understanding of the progression, over time, of early symptoms as experienced by patients while the crisis is ongoing. However, there might be many more uses, possibly ones that we did not foresee. Therefore, we encourage well motivated data requests. We hope the current document allows the scientific community to properly understand the data collection.
 
