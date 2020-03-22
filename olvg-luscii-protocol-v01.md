@@ -1,6 +1,6 @@
 # Large scale, real-time and longitudinal tele-monitoring of COVID-19 in the general population.
 
-> 20-03-2020: dr. Herre Reesing, dr. Joris H. Janssen, dr. Paul Bresser, dr. Daan Dohmen, Prof. dr. Maurits Kaptein, Prof. dr. Maurice van den Bosch.  
+> 20-03-2020: dr. Herre Reesing, dr. Joris H. Janssen, dr. Paul Bresser, dr. Daan Dohmen, Prof. dr. Maurits Kaptein, Prof. dr. Maurice van den Bosch, Omid Golzarian.  
 
 
 **Abstract:** *In this document we describe the initial setup of the large-scale, real-time, longitudinal tele-monitoring of COVID-19 symptoms study (LSRTLT-COV) as setup in the Netherlands. Although the tele-monitoring effort is primarily conceived to alleviate the burden COVID-19 imposes on the healthcare system by allowing healthcare professionals to remotely triage, monitor and comfort potential COVID-19 cases (see [https://luscii.com/nl/corona-virus/](https://luscii.com/nl/corona-virus/)), we believe the collected data is valuable: with this document we aim detail our data collection efforts such that the resulting data can meaningfully be used by the scientific community.*
