@@ -132,7 +132,7 @@ After filling out these questions participants are asked to read and comply to t
 > **Note:** The names in `code`-font indicate variable-names in the resulting dataset. See also the section Available Data below.
 
 ### Daily repeated measurements
-Participants can effectively choose to fill out each of the following measures independently every day:
+Participants can effectively choose to fill out each of the following measures independently. Although participants are encouraged visually to supply all of the measures every day, participants can choose to skip specific measurements anytime or even choose to provide multiple instances of the same measure within a single day.
 
 - `temperature`: "Please measure and fill out your temperature:"
 - `throat`: "Do you have a sore throat?" with answer categories:
@@ -251,6 +251,8 @@ This dataset contains the following fields (see measurements for additional deta
 - `measurement`: One of daily measurements (`temperature`, `throat`, `nasal`, `breath`, `cough`, `call`)
 - `value`: Measurement value in Double format.
 - `group`: The participant group (1-7) the participant is allocated to at this moment in time.
+
+> **Note:** Measures are, as much as possible, based on existing and validated scales, see [[5]](https://aacnjournals.org/ajcconline/article-abstract/7/3/200/6298/Validity-of-the-numeric-rating-scale-as-a-measure)[[6]](https://www.sciencedirect.com/science/article/pii/S0012369215396793).
 
 ## Current results
 > **Note:** These numbers were last updated updated 20-03-2020, 14.08h, CET.
