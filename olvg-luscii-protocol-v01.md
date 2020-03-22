@@ -131,8 +131,8 @@ After filling out these questions participants are asked to read and comply to t
 
 > **Note:** The names in `code`-font indicate variable-names in the resulting dataset. See also the section Available Data below.
 
-### Daily measurements
-The daily experience sampling surveys measure the following:
+### Daily repeated measurements
+Participants can effectively choose to fill out each of the following measures independently every day:
 
 - `temperature`: "Please measure and fill out your temperature:"
 - `throat`: "Do you have a sore throat?" with answer categories:
@@ -158,6 +158,8 @@ The daily experience sampling surveys measure the following:
 > **Note:** All questions and answer categories have been translated from Dutch; we have tried to maintain their semantics a much as possible.
 
 > **Note:** In an early versions (v1.0 and v1.1) of the application an additional free-text `comment` field was added. This field was later removed because although all of these comments needed to legally be manually attended to by healthcare professionals most of the comments did not relate to the participants health and thus the use of this field was deemed inefficient.
+
+> **Note:** Yes/No responses respectively converted to 1/0 in the dataset.
 
 ## Interactions with participants
 During the participation stage of the LSRTLT-COV study there are various interactions with the participants. These can be grouped into two sets: "automatically generated prompts", and "other interactions initiated by alerts". We detail each in turn. 
