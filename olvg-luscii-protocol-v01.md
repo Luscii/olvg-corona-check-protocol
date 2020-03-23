@@ -3,7 +3,7 @@
 > 20-03-2020: dr. Herre Reesing, dr. Joris H. Janssen, dr. Paul Bresser, dr. Daan Dohmen, Prof. dr. Maurits Kaptein, Prof. dr. Maurice van den Bosch, Omid Golzarian.  
 
 
-**Abstract:** *In this document we describe the initial setup of the large-scale, real-time, longitudinal tele-monitoring of COVID-19 symptoms study (LSRTLT-COV) as setup in the Netherlands. Although the tele-monitoring effort is primarily conceived to alleviate the burden COVID-19 imposes on the healthcare system by allowing healthcare professionals to remotely triage, monitor and comfort potential COVID-19 cases (see [https://luscii.com/nl/corona-virus/](https://luscii.com/nl/corona-virus/)), we believe the collected data is valuable: with this document we aim detail our data collection efforts such that the resulting data can meaningfully be used by the scientific community.*
+**Abstract:** *In this document we describe the initial setup of the large-scale, real-time, longitudinal tele-monitoring of COVID-19 symptoms study (DOC-COV) as setup in the Netherlands. Although the tele-monitoring effort is primarily conceived to alleviate the burden COVID-19 imposes on the healthcare system by allowing healthcare professionals to remotely triage, monitor and comfort potential COVID-19 cases (see [https://luscii.com/nl/corona-virus/](https://luscii.com/nl/corona-virus/)), we believe the collected data is valuable: with this document we aim detail our data collection efforts such that the resulting data can meaningfully be used by the scientific community.*
 
 
 ## Introduction
@@ -17,14 +17,14 @@ In response to the impeding crisis in the Netherlands, and inline with the argum
 
 Despite being conceived primarily to relieve the burden imposed on the healthcare system by making triage and monitoring more efficient, the resulting tele-monitoring application collects potentially valuable data. Acknowledging the societal value this data might have we have ensured that all regulations (ethical, legal) are in place to disclose anonymized versions of the resulting dataset to the scientific community. In this document we describe in detail the data collection process and we detail how requests for data can be made. We would like to note that due to the primary goal of relieving the burden on the health-care system we might, at any point in time, make changes to the functionality of the system &ndash; and thus to the data collection process &ndash; that are potentially disadvantageous from a purely scientific point-of-view but are deemed to improve upon the primary goals of the tele-monitoring application. If we make such changes we will update this document accordingly (please see [github](https://github.com/Luscii/olvg-corona-check-protocol) for versioning of this document).
 
-Below we first provide a high-level overview of the data collection as carried out in the large-scale, real-time, longitudinal tele-monitoring of COVID-19 symptoms study (LSRTLT-COV). Next, we detail the recruitment process, the measurements, and the interactions healthcare professionals have with the participants using the system. Subsequently, we provide an overview of the resulting data and detail how requests for data can be made by members of the scientific community. Finally, we discuss the known limitations of our approach.
+Below we first provide a high-level overview of the data collection as carried out in the large-scale, real-time, longitudinal tele-monitoring of COVID-19 symptoms study (DOC-COV). Next, we detail the recruitment process, the measurements, and the interactions healthcare professionals have with the participants using the system. Subsequently, we provide an overview of the resulting data and detail how requests for data can be made by members of the scientific community. Finally, we discuss the known limitations of our approach.
 
 ### High level overview of the collected data
-Before providing details regarding inclusion and data collection we first outline the general approach. Figure 1 shows the steps involved in the LSRTLT-COV study:
+Before providing details regarding inclusion and data collection we first outline the general approach. Figure 1 shows the steps involved in the DOC-COV study:
 
 1. First, potential participants are made aware of the existence of the app both through the media and by interacting with health-professionals; participants subsequently voluntarily decide to enroll.
 2. After the decision to enroll, potential participants fill out a short online survey.
-3. If participants meet the inclusion criteria they are able to download the tele-monitoring application and enroll in the LSRTLT-COV study.
+3. If participants meet the inclusion criteria they are able to download the tele-monitoring application and enroll in the DOC-COV study.
 4. Once enrolled, participants are:
 	1. Prompted daily to measure and submit a number of health indicators (i.e., we use a form of experience sampling [[4]](https://link.springer.com/chapter/10.1007/978-94-017-9088-8_2))
 	2. (optionally) Contacted by health care professionals either via in-app message or phone if their individual health data fulfills the criteria for contact.
@@ -37,7 +37,7 @@ Below we provide exact details and methodological considerations regarding each 
 
 
 ## Participants
-Here we describe the details of the enrollment process in the LSRTLT-COV study.
+Here we describe the details of the enrollment process in the DOC-COV study.
 
 ### Awareness
 Potential participants start enrollment by signing up at the webpage [https://www.olvgcoronacheck.nl](https://www.olvgcoronacheck.nl). Participants' awareness of the existence of this webpage has &ndash; up till now &ndash; been generated via different means:
@@ -48,7 +48,7 @@ Potential participants start enrollment by signing up at the webpage [https://ww
 
 Additionally, awareness might be raised through word-of-mouth, and prospective participants might be referred to the webpage by various healthcare professionals (.e.g., general practitioners or home care agencies).
 
-> **Note:** It is important to note that after awareness is created, participants voluntarily sign up. Hence, there is a clear (self-) selection bias. We are not fully in control of the word-of-mouth nor the mentions of the LSRTLT-COV tele-monitoring application in the various media and hence we only have limited control over this part of the sampling process.
+> **Note:** It is important to note that after awareness is created, participants voluntarily sign up. Hence, there is a clear (self-) selection bias. We are not fully in control of the word-of-mouth nor the mentions of the DOC-COV tele-monitoring application in the various media and hence we only have limited control over this part of the sampling process.
 
 ### Inclusion criteria
 Once a prospective participant decides to enroll, she / he fills out a short introduction survey (see the "[Measurements in introduction survey]()" section below for more details). Based on the provided answers a participant is automatically included and receives an email with further instructions if:
@@ -165,7 +165,7 @@ Although participants are prompted daily to fill in the experience sampling surv
 > **Note:** Yes/No responses respectively converted to 1/0 in the dataset.
 
 ## Interactions with participants
-During the participation stage of the LSRTLT-COV study there are various interactions with the participants. These can be grouped into two sets: "automatically generated prompts", and "other interactions initiated by alerts". We detail each in turn. 
+During the participation stage of the DOC-COV study there are various interactions with the participants. These can be grouped into two sets: "automatically generated prompts", and "other interactions initiated by alerts". We detail each in turn. 
 
 ### Prompts
 Prompts are either email messages and / or phone notifications (depending on participants settings, participants can also turn these off) which are automatically generated every day to remind participants of the daily survey. To control the load on the system not all prompts are send at the same time but rather the timing depends on the group membership:
@@ -218,7 +218,7 @@ Alerts are subsequently responded to in the following way:
 
 ### Additional group membership: *COVID positive* and *cured*
 
-Next to the 5 participant groups detailed above, two more groups exist in the LSRTLT-COV study:
+Next to the 5 participant groups detailed above, two more groups exist in the DOC-COV study:
 
 * 6. *"COVID-19 (suspected) positive"* participants: Participants are allocated to this group if the either score high on `cough > 2` and have a fever OR score high on `breath > 5` and have a fever where fever is dependent on prior group membership (see above).
 * 7. *"Referred to ER"* participants: Participants are allocated to this group after a phone call in which the healthcare provider has requested a participant to visit the ER and get tested for COVID-19. 
@@ -290,7 +290,7 @@ Figure 4:Introduction survey 1                           |  Figure 5:Introductio
 Figure 7:Healthcare progression admin                             |  Figure 8:Participant app
 
 ## Discussion
-With this document we have tried to present a full overview of our data collection process in the LSRTLT-COV study such that researchers can make informed and meaningful requests for data and can validly judge any analysis based on the collected data. Here we mention a few methodological points that should be considered by anyone analyzing this data:
+With this document we have tried to present a full overview of our data collection process in the DOC-COV study such that researchers can make informed and meaningful requests for data and can validly judge any analysis based on the collected data. Here we mention a few methodological points that should be considered by anyone analyzing this data:
 
 1. The sampling process is somewhat outside of our control. Although the participant group is large (and rapidly growing), it will contain self-selection bias. Weighting by age and gender might help to make the results more representative.
 2. We only know the location of the participant when they sign up (i.e., we know the postal code of their house). We do not have any further information on the whereabouts, mobility, or network of participants.
@@ -301,7 +301,7 @@ With this document we have tried to present a full overview of our data collecti
 > **Note:** Additional comments are welcome; we gladly add all important considerations to this list.
 
 ## Data requests
-We encourage data requests by fellow researchers. A request can be filed by sending the answers to the following questions to [lsrtlt-cov@luscii.com](mailto:lsrtlt-cov@luscii.com):
+We encourage data requests by fellow researchers. A request can be filed by sending the answers to the following questions to [doc-cov@luscii.com](mailto:doc-cov@luscii.com):
 
 1. Who are you? Please provide email, name, and affiliations.
 2. What would you like to use this data for? Please provide a short rationale for requesting this specific dataset.
@@ -322,6 +322,6 @@ We are trying to handle data requests **daily**, but given the current situation
 > **Note:** We expect anyone who uses our collected data to acknowledge the source; please do reference this page anytime you make use of the collected data.
  
 ## Conclusion
-We would like to close this document by reiterating that the primarily goal of the tele-monitoring system used in the LSRTLT-COV study is to relieve the burden imposed on the healthcare system by making triage and monitoring more efficient. Therefore, along the way, not all the choices that we make are solely driven by scientific methodological rigor. Sometimes practical demands steer our decision making. We however sincerely believe that despite this, the resulting data are valuable: at the very least the data provide an understanding of the progression, over time, of early symptoms as experienced by patients while the crisis is ongoing. However, there might be many more uses, possibly ones that we did not foresee. Therefore, we encourage well motivated data requests. We hope the current document allows the scientific community to properly understand the data collection.
+We would like to close this document by reiterating that the primarily goal of the tele-monitoring system used in the DOC-COV study is to relieve the burden imposed on the healthcare system by making triage and monitoring more efficient. Therefore, along the way, not all the choices that we make are solely driven by scientific methodological rigor. Sometimes practical demands steer our decision making. We however sincerely believe that despite this, the resulting data are valuable: at the very least the data provide an understanding of the progression, over time, of early symptoms as experienced by patients while the crisis is ongoing. However, there might be many more uses, possibly ones that we did not foresee. Therefore, we encourage well motivated data requests. We hope the current document allows the scientific community to properly understand the data collection.
 
 
