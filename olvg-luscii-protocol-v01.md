@@ -156,7 +156,7 @@ Although participants are prompted daily to fill in the experience sampling surv
 	- "Yes"
 	- "No"
 
-[Figure 6](#Visual-overview-of-the-tele-monitoring-system) provides a screenshot of the application.
+[Figure 8](#Visual-overview-of-the-tele-monitoring-system) provides a screenshot of the application.
 
 > **Note:** All questions and answer categories have been translated from Dutch; we have tried to maintain their semantics a much as possible.
 
@@ -273,18 +273,21 @@ While this document does not aim to provide any analysis of the collected data, 
 	6. "COVID-19 (suspected) positive": **1.301**
 	7. "Referred to ER": **15**
 	7. "Cured:" **0**
-8. Total number of daily surveys: **346.231** (each symptom is considered a separate survey in the dataset)
+    8. Total number of daily surveys: **346.231** (each symptom is considered a separate survey in the dataset)
 
+![Figure 2: Age distribution.](age-distribution.png)  |  ![Figure 3: Distribution of participants over the groups.](group-distribution.png) 
+:----------------------------------------------------:|:----------------------------------------------------------------------------------:
+Figure 2:Age distribution                             |  Figure 3:Distribution of participants over the groups
 
 ## Visual overview of the tele monitoring system
 
-![Figure 2: Introduction survey 1.](intro-survey-1.png)  |  ![Figure 3: Introduction survey 2.](intro-survey-2.png) | ![Figure 4: Introduction survey 3.](intro-survey-3.png)
-:-------------------------------:|:---------------------------------:|:-------------------------:
-Figure 2:Introduction survey 1.   |  Figure 3:Introduction survey 2   |  Figure 4:Introduction survey 3
+![Figure 4: Introduction survey 1.](intro-survey-1.png)  |  ![Figure 5: Introduction survey 2.](intro-survey-2.png) | ![Figure 6: Introduction survey 3.](intro-survey-3.png)
+:-------------------------------------------------------:|:--------------------------------------------------------:|:------------------------------------------------------:
+Figure 4:Introduction survey 1                           |  Figure 5:Introduction survey 2                          |  Figure 6:Introduction survey 3
 
-![Figure 5: Healthcare progression admin.](healthcare-panel.png)  |  ![Figure 6: Participant app.](participant-app.png) 
-:-------------------------------:|:---------------------------------:
-Figure 5:Healthcare progression admin   |  Figure 6:Participant app
+![Figure 7: Healthcare progression admin.](healthcare-panel.png)  |  ![Figure 8: Participant app.](participant-app.png) 
+:----------------------------------------------------------------:|:--------------------------------------------------:
+Figure 7:Healthcare progression admin                             |  Figure 8:Participant app
 
 ## Discussion
 With this document we have tried to present a full overview of our data collection process in the LSRTLT-COV study such that researchers can make informed and meaningful requests for data and can validly judge any analysis based on the collected data. Here we mention a few methodological points that should be considered by anyone analyzing this data:
