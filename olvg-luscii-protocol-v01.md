@@ -295,7 +295,7 @@ Figure 7:Healthcare progression admin                             |  Figure 8:Pa
 ---
 
 ## Updates
-This document was initially concieved on 20-03-2020; as the tele-monitoring application we use for the DOC-COV study is in active use to help reduce the burden on the healthcare system in various places this protocol is subject to change. In this section of this document we try keep track -- as much as possible -- of changes that occur over time. On each pupdate we update both the recruitment efforts and the alert rules (and any other things that we feel are methodologically worth mentioning).
+This document was initially concieved on 20-03-2020; as the tele-monitoring application we use for the DOC-COV study is in active use to help reduce the burden on the healthcare system in various places this protocol is subject to change. In this section of this document we try keep track -- as much as possible -- of changes that occur over time. On each update we update both the recruitment efforts and the alert rules (and any other things that we feel are methodologically worth mentioning).
 
 > This part of this document is dynamic and subjective to change.
 
