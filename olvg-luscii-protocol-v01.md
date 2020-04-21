@@ -2,6 +2,8 @@
 
 > 20-03-2020: dr. Herre Reesing, dr. Joris H. Janssen, dr. Paul Bresser, dr. Daan Dohmen, Prof. dr. Maurits Kaptein, Prof. dr. Maurice van den Bosch, Omid Golzarian.  
 
+> 14-04-2020: Update based on additional enrollment and minor changes to alert rules (see section "Updates" at the end of document). 
+
 
 **Abstract:** *In this document we describe the initial setup of the large-scale, real-time, longitudinal tele-monitoring of COVID-19 symptoms study (DOC-COV) as setup in the Netherlands. Although the tele-monitoring effort is primarily conceived to alleviate the burden COVID-19 imposes on the healthcare system by allowing healthcare professionals to remotely triage, monitor and comfort potential COVID-19 cases (see [https://luscii.com/nl/corona-virus/](https://luscii.com/nl/corona-virus/)), we believe the collected data is valuable: with this document we aim detail our data collection efforts such that the resulting data can meaningfully be used by the scientific community.*
 
@@ -266,14 +268,14 @@ While this document does not aim to provide any analysis of the collected data, 
 - Total number of participants filling out a daily survey today: **26.416**
 - Total number of participants per group:
 	1. "Healthcare professionals": **2.731**
-	2. "Non-vulnerable OLVG participants": **6.975**	
+	2. "Non-vulnerable OLVG participants": **6.975**
 	3. "Non-vulnerable, non-OLVG participants": **14.959**
 	4. "Vulnerable OLVG participants": **3.754**
 	5. "Vulnerable, non-OLVG participants": **3.151**
 	6. "COVID-19 (suspected) positive": **1.301**
 	7. "Referred to ER": **15**
-	7. "Cured:" **0**
-    8. Total number of daily surveys: **346.231** (each symptom is considered a separate survey in the dataset)
+	8. "Cured:" **0**
+- Total number of daily surveys: **346.231** (each symptom is considered a separate survey in the dataset)
 
 ![Figure 2: Age distribution.](age-distribution.png)  |  ![Figure 3: Distribution of participants over the groups.](group-distribution.png) 
 :----------------------------------------------------:|:----------------------------------------------------------------------------------:
@@ -288,6 +290,69 @@ Figure 4:Introduction survey 1                           |  Figure 5:Introductio
 ![Figure 7: Healthcare progression admin.](healthcare-panel.png)  |  ![Figure 8: Participant app.](participant-app.png) 
 :----------------------------------------------------------------:|:--------------------------------------------------:
 Figure 7:Healthcare progression admin                             |  Figure 8:Participant app
+
+
+---
+
+## Updates
+This document was initially concieved on 20-03-2020; as the tele-monitoring application we use for the DOC-COV study is in active use to help reduce the burden on the healthcare system in various places this protocol is subject to change. In this section of this document we try keep track -- as much as possible -- of changes that occur over time. On each update we update both the recruitment efforts and the alert rules (and any other things that we feel are methodologically worth mentioning).
+
+> This part of this document is dynamic and subjective to change.
+
+### Changes to alert rules over time
+> Update 16-04-2020
+
+Over time the alert rules have slightly changed to match updated regulations by the Dutch RIVM and to ensure that the workload for the monitoring healthcare professionals is manageable. We keep minute track of all updates in a seperate document (see [alerts_changes_16042020.docx](alerts_changes_16042020.docx) which is avaialbe in Dutch). Here we provide the update as of 16-04-2020:
+
+> Note that, contrary to the initial alerts, we are now using alerts based on combinations of symptomps.
+
+1. "Healthcare professionals": 
+	- If `breath > 6` OR the `breath` score has increased by more than 2 points: "RED" alert.
+	- If `temperature > 38.0` AND `cough > 4`: "RED" alert.
+2. "Non-vulnerable OLVG participants": 
+	- If `breath > 5` OR the `breath` score has increased by more than 2 points: "RED" alert.
+	- If `temperature > 38.0` AND `cough > 4`: "RED" alert.
+3. "Non-vulnerable, non-OLVG participants": 
+	- If `breath > 5` OR the `breath` score has increased by more than 2 points: "RED" alert.
+	- If `temperature > 38.0` AND `cough > 4`: "RED" alert.
+4. "Vulnerable OLVG participants": 
+	- If `breath > 5` OR the `breath` score has increased by more than 2 points: "RED" alert.
+	- If `temperature > 37.5` AND `cough > 4`: "RED" alert.
+5. "Vulnerable, non-OLVG participants": 
+	- If `breath > 5` OR the `breath` score has increased by more than 2 points: "RED" alert.
+	- If `temperature > 38.0` AND `cough > 4`: "RED" alert.
+6. "COVID-19 (suspected) positive": 
+	- If `temperature > 39.0`: "RED" alert.
+	- If the `breath` score has increased by more than 1 point: "RED" alert.
+
+Additionally, when there is an absence of fewer for over 24 hours, AND `breath < 2` AND `cough < 3` a participants is labelled as "cured".
+
+### Additional enrollment
+> 16-04-2020
+
+Since the last update we have scaled to > 100.000 users and over 5.000.000 measurements. The additional partcipants are recruited in multiple ways:
+
+1. There is upscaling within the initial regions in which the application was active (i.e., more people in the Amsterdam region are installing the application).
+2. We have added a number of new regions, often by adding additional hospitals. Now added are the UMC Utrech, CWZ Nijmegen, WZA Assen, the Maasstad hospital, and the Jeroen Bosch Hospital. Furhtermore, we also added the MST Enschede although the latter is administered by the OLVG healthcare professionals.
+
+It is interesting to note that over 40% of participants is daily active one week after enrollment (this number is >70% for "COVID-19 (suspected) positive" cases.
+
+### Updated process for data sharing
+> 16-04-2020: We provide an additional update on the process we follow when sharing data.
+
+We have now better described the process for data sharing. This is as follows:
+
+1. After receiving a data request our scientific board evaluates the request. Although we try to approve as many applications as possible to make sure the collected data are put to good use, we do have two stringent criteria: 
+	- First, we will judge whether a research question(s) can indeed be answered using our data; if we feel this is not the case we will be in contact.
+	- Second, we will try to minimize the amount of shared data and effectively restrict the shared data to those variables that are necessary for submitted question(s). 
+
+2. After approval by our board, which will be communicated by email, we will send you a short form that describes which data will be shared and for which purposes. This is effectively an agreement outlining the intended use of the data as described by you in your application that we will ask the requester to sign.
+
+3. Finally, after the formalities have been covered, we will export the data as requested and agreed upon. After creating this export we will share a link to the exported snap-shot of the data (likely a .csv) that was requested and it will be available for the requester to download for a limited period.
+
+We will keep requesters informed of the different steps in the procedure and their position therein. Admittedly, while we try to move this proces forward as fast as possible, we have to acknowledge that the current situation is challenging. As our primary focus is on supporting as many healthcare professionals as possible, the rapid scaling of the application is currently inevitably limiting the speed at which we can execute our data sharing procedure. 
+
+---
 
 ## Discussion
 With this document we have tried to present a full overview of our data collection process in the DOC-COV study such that researchers can make informed and meaningful requests for data and can validly judge any analysis based on the collected data. Here we mention a few methodological points that should be considered by anyone analyzing this data:
